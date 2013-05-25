@@ -1,3 +1,3 @@
-TESTING!
+First Version of Sharee teaser page
 
-HP
+Henri Palacci
