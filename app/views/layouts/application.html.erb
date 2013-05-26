@@ -7,25 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<header class="navbar navbar-fixed-top navbar-inverse">
-		<div class="navbar-inner">
-			<div class="container">
-				<img src='http://s20.postimg.org/5cqlewrk9/image.jpg' border='0' alt="image" width="50" height="20" align="left" 
-				style="padding: 0px 3px;" /> <%= link_to " SHAREE", '#', id: "logo" %> 
-				
-				<nav>
-					<ul class="nav pull-right">
-						<li><%= link_to "Home", '#' %></li> 
-						<li><%= link_to "Help", '#' %></li> 
-						<li><%= link_to "Sign in", '#' %></li>
-					</ul> 
-				</nav>
-	        </div>
-	      </div>
-	</header>
+	<%= render 'layouts/header' %>
 	
 	<div class="container">
 		<%= yield %>
+		<%= render 'layouts/footer' %>
 	</div>
 
 </body>
