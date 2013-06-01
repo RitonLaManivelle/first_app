@@ -44,21 +44,24 @@
 			    /* Downsize the brand/project name a bit */
 			    .navbar .brand {
 			      padding: 14px 20px 16px 80px; /* Increase vertical padding to match navbar links */
-			      font-size: 22px;
+			      font-size: 29px;
 			      font-weight: bold;
 			
 						color: #0070c0;
 						span {
 							color: #ff0000;
 						}
+						text-shadow: 0 1px 1px rgba(0,0,0,.4)
 			    }
 					
 					.logo {
+
 						position: absolute;
 						height: 50px;
 						width: 50px;
-						padding: 0;
+						padding: 0px;
 						background-color: transparent;
+						
 					}
 			    /* Navbar links: increase padding for taller navbar */
 			    .navbar .nav > li > a {
@@ -74,6 +77,7 @@
 
 			    /* CUSTOMIZE THE CAROUSEL
 			    -------------------------------------------------- */
+
 
 			    /* Carousel base class */
 			    .carousel {
@@ -277,6 +281,19 @@
 
 			    }
 			
+					  /* CUSTOMIZE THE SIGNUP PAGE
+				    -------------------------------------------------- */
+
+						.span6{
+							position: relative;
+							margin-top: 120px;
+						}
+			
+					.alert{
+						margin-top: 85px;
+						margin-left: 235px;
+						position: absolute;
+					}
 					/* footer */
 					footer {
 					  margin-top: 45px;
