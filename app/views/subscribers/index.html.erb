@@ -3,9 +3,9 @@
 <div class="container">
 	<div class="span6 offset3">
 		<h1>All subscribers</h1>
-		<ul class="subscribers">
+		<ul class="subscribers unstyled">
 			<% @subscribers.each do |subscriber| %>
-			<li><%= link_to subscriber.email, subscriber %> </li>
+			<li><%= subscriber.email %> </li>
 			<% end %> 
 		</ul>
 	</div>

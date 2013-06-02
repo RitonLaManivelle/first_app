@@ -3,7 +3,7 @@
 <div class="container">
 
   <div class="span6 offset3">
-		<h1>Se preinscrire!</h1>
+		<h1>S'inscrire</h1>
 <%= form_for(@user) do |f| %> 
 	<%= render 'shared/error_messages' %>
 	<%= f.label :name %>
@@ -12,6 +12,6 @@
 <%= f.password_field :password %>
 <%= f.label :password_confirmation, "Confirmation" %>
 <%= f.password_field :password_confirmation %>
-<%= f.submit "Je m'inscris pour etre prevenu des le lancement du site!", class: "btn btn-large btn-primary" %> <% end %>
+<%= f.submit "Inscrivez vous pour avoir acces au site complet", class: "btn btn-large btn-primary" %> <% end %>
   </div>
 </div>
