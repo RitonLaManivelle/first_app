@@ -15,7 +15,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
 				<% if signed_in? %>
-					<li><a href="#contact">Subscriber List</a></li>
+					<li><%= link_to "Subscriber List", subscribers_path%></li>
 					<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
 				<% end %>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->

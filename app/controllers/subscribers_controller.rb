@@ -1,4 +1,6 @@
 class SubscribersController < ApplicationController
+include SessionsHelper
+
   def new
     @subscriber=Subscriber.new
   end
@@ -16,4 +18,11 @@ class SubscribersController < ApplicationController
         render 'new'
       end
   end
+ 
+before_filter :signed_in_user, only: [:index]
+  
+  def index
+    @subscribers=Subscriber.all
+  end
+  
 end

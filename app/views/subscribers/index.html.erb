@@ -1,0 +1,12 @@
+<% provide(:title, 'All Subscribers') %> 
+
+<div class="container">
+	<div class="span6 offset3">
+		<h1>All subscribers</h1>
+		<ul class="subscribers">
+			<% @subscribers.each do |subscriber| %>
+			<li><%= link_to subscriber.email, subscriber %> </li>
+			<% end %> 
+		</ul>
+	</div>
+</div>
