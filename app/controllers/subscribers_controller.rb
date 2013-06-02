@@ -13,6 +13,7 @@ include SessionsHelper
       @subscriber = Subscriber.new(params[:subscriber])
       if @subscriber.save
         # Handle a successful save.
+        SubscriberMailer.welcome_email(@subscriber).deliver
         redirect_to @subscriber
   else
         render 'new'
