@@ -31,7 +31,9 @@
 					    </a>
 					    <ul class="dropdown-menu">
 					      	<li><%= link_to "Subscriber List", subscribers_path%></li>
-						<li class="divider-horizontal"></li>
+							<li><%= link_to "Changer mon profil", edit_user_path(current_user)%></li>
+							<li><%= link_to "User list", users_path%></li>
+						<li class="divider"></li>
 							<li><%= link_to "Sign out", signout_path, method: "delete" %></li> 	
 					    </ul>
 					  </li>
